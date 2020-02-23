@@ -4,7 +4,6 @@ package com.example.jwt.payload;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.util.HashSet;
 import java.util.Set;
 
 public class SignupRequest {
@@ -20,7 +19,7 @@ public class SignupRequest {
     private Set<String> role;
 
     @NotBlank
-    @Size(min = 6, max = 15)
+    @Size(min = 6, max = 40)
     private String password;
 
     public String getUsername() {
